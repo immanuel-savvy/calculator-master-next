@@ -40,7 +40,8 @@ class Calculator_sidebar extends React.Component {
 
     if (!calculator) return <Loadindicator />;
 
-    let nav = navs.find((n) => n._id === calculator?.category);
+    let nav =
+      navs && navs.find && navs.find((n) => n._id === calculator?.category);
 
     if (!nav) return;
 
