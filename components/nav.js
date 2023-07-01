@@ -15,14 +15,16 @@ import Link from "next/link";
 import { to_title, trim_id } from "@/assets/js/utils/functions";
 
 const Custom_nav = ({ navs }) => {
-  navs?.sort((c1, c2) => {
-    let a_title = c1?.title?.toLowerCase(),
-      b_title = c2?.title?.toLowerCase();
+  navs &&
+    navs.sort &&
+    navs?.sort((c1, c2) => {
+      let a_title = c1?.title?.toLowerCase(),
+        b_title = c2?.title?.toLowerCase();
 
-    if (a_title === "other" && b_title !== "other") return 1;
-    else if (a_title !== "other" && b_title === "other") return -1;
-    else return 0;
-  });
+      if (a_title === "other" && b_title !== "other") return 1;
+      else if (a_title !== "other" && b_title === "other") return -1;
+      else return 0;
+    });
 
   return (
     <div>
