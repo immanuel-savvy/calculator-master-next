@@ -10,7 +10,7 @@ const client_domain = DEV
 
 const domain = DEV
   ? `${hostname}:3301`
-  : `https://backend.mortgage-amortization-calculator.net`;
+  : `https://backend.annuitycalculator6.com`;
 
 const month_index = new Object({
   0: "jan",
