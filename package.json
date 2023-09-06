@@ -26,6 +26,7 @@
     "@babel/cli": "^7.21.0",
     "@babel/core": "^7.21.0",
     "@babel/plugin-proposal-do-expressions": "^7.22.5",
+    "@babel/preset-env": "^7.22.15",
     "babel-preset-env": "^1.7.0"
   },
   "browserslist": [
